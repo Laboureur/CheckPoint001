@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio - Beginner Coder</title>
+    <!-- I added some basic styles here because I'm learning CSS too! -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f0; /* Light gray background for fun */
+        }
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
+            background-color: #333; 
+            padding: 10px; 
+            margin: 0; 
+        }
+        nav li { 
+            margin: 0 15px; 
+        }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 18px; 
+        }
+        section { 
+            padding: 20px; 
+            margin: 10px; 
+            background-color: white; 
+            border: 1px solid #ccc; /* Simple border to make sections look neat */
+        }
+        h1, h2 { 
+            color: #333; 
+        }
+        footer { 
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            margin-top: 20px; 
+        }
+        form { 
+            max-width: 400px; 
+            margin: 0 auto; 
+        }
+        input, textarea { 
+            width: 100%; 
+            padding: 5px; 
+            margin: 5px 0; 
+            box-sizing: border-box; 
+        }
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px; 
+            border: none; 
+            cursor: pointer; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #f2f2f2; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with my first navigation bar! I used <nav> because it's semantic. -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content - This is where all the magic happens! -->
+    <main>
+        <!-- Home section - Added a video of me trying to code for the first time (local file) -->
+        <section id="home">
+            <h1>Welcome to My Very First Website!</h1>
+            <p>Hi! I'm a total beginner, and this is my first portfolio page. I just started coding, and it's so exciting! Check out this video of my first "Hello World" moment.</p>
+            <!-- Video tag - I put a local video file here. Replace with your own! -->
+            <video width="400" controls>
+                <source src="my-first-code.mp4" type="video/mp4">
+                Sorry, your browser doesn't support video. But imagine me typing "Hello World"!
+            </video>
+            <p><a href="#about">Click here to learn more about me!</a> <!-- Local link to about section --></p>
+        </section>
+
+        <!-- About section - Used a list to talk about myself -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a student who just discovered web development. It's my first time, and I'm learning HTML right now!</p>
+            <!-- Unordered list - Semantic <ul> for my hobbies -->
+            <ul>
+                <li>I love playing video games</li>
+                <li>I'm new to coding but super motivated</li>
+                <li>Want to build apps one day</li>
+                <li>Favorite food: Pizza (who doesn't?)</li>
+            </ul>
+        </section>
+
+        <!-- Work section - Made a simple table for my "projects" (even if they're tiny) -->
+        <section id="work">
+            <h2>My Work (Baby Steps!)</h2>
+            <p>These are my first attempts at projects. Nothing fancy yet.</p>
+            <!-- Table - <table> tag for organizing my stuff -->
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>What I Did</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Hello World Page</td>
+                    <td>Just wrote some text in HTML</td>
+                    <td><a href="hello-world.html">See It</a> <!-- Local link to another file I made --></td>
+                </tr>
+                <tr>
+                    <td>Simple List</td>
+                    <td>Made a grocery list with <ul></td>
+                    <td><a href="grocery.html">View List</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Resume section - Ordered list for my "experience" -->
+        <section id="resume">
+            <h2>My Resume (So Far...)</h2>
+            <p>I'm just starting out, but here's what I've done lately.</p>
+            <!-- Ordered list - <ol> for steps in my learning -->
+            <ol>
+                <li>Started this course today!</li>
+                <li>Watched my first HTML video</li>
+                <li>Built this page (yay!)</li>
+            </ol>
+            <!-- Audio tag - Added a sound of me saying "I'm a coder now!" (local file) -->
+            <audio controls>
+                <source src="first-code-audio.mp3" type="audio/mpeg">
+                Can't play audio? No worries!
+            </audio>
+            <p>Listen to my excited voice note above.</p>
+        </section>
+
+        <!-- Contact section - HTML form to say hi -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Say hello if you're also a beginner coder!</p>
+            <!-- Form - <form> with inputs, labels are important for accessibility -->
+            <form action="#" method="post"> <!-- This is fake for now, but real forms need a backend -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell me about your first code!"></textarea>
+
+                <button type="submit">Send!</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer - Simple and semantic -->
+    <footer>
+        <p>&copy; 2025 My First Site. Made with love and lots of trial and error! | <a href="#home">Back to Top</a></p>
+    </footer>
+</body>
+</html>
