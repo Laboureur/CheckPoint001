@@ -1,186 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Portfolio - Beginner Coder</title>
-    <!-- I added some basic styles here because I'm learning CSS too! -->
+<head>    
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Delicious Bites Menu - Gourmet Experiences Await</title>
+    <!-- Added a simple embedded CSS for better styling and responsiveness -->
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f0f0f0; /* Light gray background for fun */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        nav ul { 
-            list-style: none; 
-            display: flex; 
-            justify-content: center; 
-            background-color: #333; 
-            padding: 10px; 
-            margin: 0; 
+        header {
+            background-color: #8B4513; /* Earthy brown for a warm restaurant feel */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        nav li { 
-            margin: 0 15px; 
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        nav a { 
-            color: white; 
-            text-decoration: none; 
-            font-size: 18px; 
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1.5em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        section { 
-            padding: 20px; 
-            margin: 10px; 
-            background-color: white; 
-            border: 1px solid #ccc; /* Simple border to make sections look neat */
+        h2 {
+            color: #8B4513;
+            border-bottom: 2px solid #D2691E;
+            padding-bottom: 0.5em;
         }
-        h1, h2 { 
-            color: #333; 
+        ul {
+            list-style: none;
+            padding: 0;
         }
-        footer { 
-            background-color: #333; 
-            color: white; 
-            text-align: center; 
-            padding: 10px; 
-            margin-top: 20px; 
+        li {
+            margin-bottom: 1em;
+            padding: 1em;
+            background-color: #fffaf0;
+            border-left: 4px solid #D2691E;
+            border-radius: 4px;
         }
-        form { 
-            max-width: 400px; 
-            margin: 0 auto; 
+        strong {
+            display: block;
+            font-size: 1.2em;
+            color: #8B4513;
         }
-        input, textarea { 
-            width: 100%; 
-            padding: 5px; 
-            margin: 5px 0; 
-            box-sizing: border-box; 
+        p {
+            margin: 0.5em 0 0 0;
+            font-style: italic;
         }
-        button { 
-            background-color: #4CAF50; 
-            color: white; 
-            padding: 10px; 
-            border: none; 
-            cursor: pointer; 
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #8B4513;
+            color: white;
+            margin-top: 2em;
         }
-        table { 
-            width: 100%; 
-            border-collapse: collapse; 
+        a {
+            color: #D2691E;
+            text-decoration: none;
+            font-weight: bold;
         }
-        th, td { 
-            border: 1px solid #ddd; 
-            padding: 8px; 
-            text-align: left; 
+        a:hover {
+            text-decoration: underline;
         }
-        th { 
-            background-color: #f2f2f2; 
+        /* Responsive design: Stack on mobile */
+        @media (max-width: 600px) {
+            section {
+                margin: 1em;
+                padding: 1em;
+            }
+            h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
-<body>
-    <!-- Header with my first navigation bar! I used <nav> because it's semantic. -->
+<body>   
+    <!-- Added a semantic header for better structure -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Delicious Bites Menu</h1>
+        <p>Indulge in our handcrafted dishes made with fresh, seasonal ingredients.</p>
     </header>
 
-    <!-- Main content - This is where all the magic happens! -->
+    <!-- Main content with semantic sections -->
     <main>
-        <!-- Home section - Added a video of me trying to code for the first time (local file) -->
-        <section id="home">
-            <h1>Welcome to My Very First Website!</h1>
-            <p>Hi! I'm a total beginner, and this is my first portfolio page. I just started coding, and it's so exciting! Check out this video of my first "Hello World" moment.</p>
-            <!-- Video tag - I put a local video file here. Replace with your own! -->
-            <video width="400" controls>
-                <source src="my-first-code.mp4" type="video/mp4">
-                Sorry, your browser doesn't support video. But imagine me typing "Hello World"!
-            </video>
-            <p><a href="#about">Click here to learn more about me!</a> <!-- Local link to about section --></p>
+        <section id="appetizers">
+            <h2>Appetizers</h2>  
+            <ul>     
+                <li>          
+                    <strong>Caprese Salad</strong>       
+                    <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze. Perfect for sharing.</p> 
+                </li>    
+                <li>          
+                    <strong>Garlic Herb Bruschetta</strong>       
+                    <p>Crispy toasted bread topped with diced tomatoes, garlic, and fresh herbs. A classic starter.</p> 
+                </li>
+                <li>          
+                    <strong>Stuffed Mushrooms</strong>       
+                    <p>Juicy mushrooms filled with cheese, spinach, and breadcrumbs, baked until golden. Vegetarian delight.</p> 
+                </li>
+            </ul>  
         </section>
 
-        <!-- About section - Used a list to talk about myself -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a student who just discovered web development. It's my first time, and I'm learning HTML right now!</p>
-            <!-- Unordered list - Semantic <ul> for my hobbies -->
-            <ul>
-                <li>I love playing video games</li>
-                <li>I'm new to coding but super motivated</li>
-                <li>Want to build apps one day</li>
-                <li>Favorite food: Pizza (who doesn't?)</li>
-            </ul>
+        <section id="mains">
+            <h2>Main Courses</h2> 
+            <ul>   
+                <li>      
+                    <strong>Grilled Salmon</strong>     
+                    <p>Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce and quinoa.</p>   
+                </li>     
+                <li>      
+                    <strong>Vegetarian Stir-Fry</strong>     
+                    <p>A colorful medley of fresh vegetables and tofu tossed in a savory soy-ginger sauce over rice noodles.</p>   
+                </li>
+                <li>      
+                    <strong>Beef Tenderloin</strong>     
+                    <p>Tender beef steak seared to your liking, accompanied by roasted potatoes, asparagus, and red wine reduction.</p>   
+                </li>
+            </ul>   
         </section>
 
-        <!-- Work section - Made a simple table for my "projects" (even if they're tiny) -->
-        <section id="work">
-            <h2>My Work (Baby Steps!)</h2>
-            <p>These are my first attempts at projects. Nothing fancy yet.</p>
-            <!-- Table - <table> tag for organizing my stuff -->
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>What I Did</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Hello World Page</td>
-                    <td>Just wrote some text in HTML</td>
-                    <td><a href="hello-world.html">See It</a> <!-- Local link to another file I made --></td>
-                </tr>
-                <tr>
-                    <td>Simple List</td>
-                    <td>Made a grocery list with <ul></td>
-                    <td><a href="grocery.html">View List</a></td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- Resume section - Ordered list for my "experience" -->
-        <section id="resume">
-            <h2>My Resume (So Far...)</h2>
-            <p>I'm just starting out, but here's what I've done lately.</p>
-            <!-- Ordered list - <ol> for steps in my learning -->
-            <ol>
-                <li>Started this course today!</li>
-                <li>Watched my first HTML video</li>
-                <li>Built this page (yay!)</li>
-            </ol>
-            <!-- Audio tag - Added a sound of me saying "I'm a coder now!" (local file) -->
-            <audio controls>
-                <source src="first-code-audio.mp3" type="audio/mpeg">
-                Can't play audio? No worries!
-            </audio>
-            <p>Listen to my excited voice note above.</p>
-        </section>
-
-        <!-- Contact section - HTML form to say hi -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Say hello if you're also a beginner coder!</p>
-            <!-- Form - <form> with inputs, labels are important for accessibility -->
-            <form action="#" method="post"> <!-- This is fake for now, but real forms need a backend -->
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Tell me about your first code!"></textarea>
-
-                <button type="submit">Send!</button>
-            </form>
+        <section id="desserts">
+            <h2>Desserts</h2>  
+            <ul>     
+                <li>    
+                    <strong>Chocolate Fondue</strong>     
+                    <p>Assorted fruits and marshmallows served with rich chocolate fondue. Interactive and indulgent.</p>    
+                </li>    
+                <li>    
+                    <strong>Creme Brulee</strong>     
+                    <p>Silky vanilla custard topped with a caramelized sugar crust for that perfect crunch. Timeless elegance.</p>    
+                </li>
+                <li>    
+                    <strong>Berry Cheesecake</strong>     
+                    <p>Creamy cheesecake swirled with fresh berries on a graham cracker crust. Berry burst in every bite.</p>    
+                </li>
+            </ul> 
         </section>
     </main>
 
-    <!-- Footer - Simple and semantic -->
+    <!-- Added a semantic footer with additional info and the required link -->
     <footer>
-        <p>&copy; 2025 My First Site. Made with love and lots of trial and error! | <a href="#home">Back to Top</a></p>
+        <p><a href="contact.html">Contact us for reservations</a> | &copy; 2025 Delicious Bites. All rights reserved.</p>
     </footer>
 </body>
 </html>
